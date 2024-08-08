@@ -1,0 +1,44 @@
+.carousel {
+  height: 500px;
+  background: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.carousel-image {
+  height: 450px;
+  width: 600px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.carousel-title {
+  color: #ffffff;
+}
+
+.carousel-description {
+  color: #666666;
+  white-space: nowrap;
+  max-width: 100ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel-price {
+  color: #ffd700;
+}
+
+.carousel-button {
+  background: #007bff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background: #0056b3;
+}
+
+.carousel-text-shadow {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
