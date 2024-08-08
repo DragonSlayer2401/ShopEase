@@ -1,6 +1,13 @@
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Nav, Navbar, NavbarBrand, NavbarCollapse, NavbarToggle, NavLink } from 'react-bootstrap';
+import {
+  Nav,
+  Navbar,
+  NavbarBrand,
+  NavbarCollapse,
+  NavbarToggle,
+  NavLink,
+} from 'react-bootstrap';
 import './Nav.css';
 
 const NavBar = () => {
@@ -20,14 +27,14 @@ const NavBar = () => {
         <NavbarToggle />
         <NavbarCollapse>
           <Nav className="flex gap-x-4">
-            <NavLink>Home</NavLink>
-            <NavLink>Products</NavLink>
-            <NavLink>Contact</NavLink>
-            <NavLink>
+            <NavLink href="/">Home</NavLink>
+            <NavLink href="/products">Products</NavLink>
+            <NavLink href="/contact">Contact</NavLink>
+            <NavLink href="/cart">
               <FontAwesomeIcon icon={faShoppingCart} />
             </NavLink>
-            <NavLink>Login</NavLink>
-            <NavLink>Signup</NavLink>
+            <NavLink href="/login">Login</NavLink>
+            <NavLink href="/signup">Signup</NavLink>
           </Nav>
         </NavbarCollapse>
       </Navbar>
