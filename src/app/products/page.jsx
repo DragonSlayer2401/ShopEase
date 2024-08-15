@@ -1,4 +1,4 @@
-import NavBar from "@/components/Navigation/NavBar";
+import NavBar from "@/components/Header/NavBar";
 
 export default async function Products() {
   return (

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^3.5.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
@@ -16,6 +17,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "axios": "^1.7.3",
     "bootstrap": "^5.3.3",
+    "mongoose": "^8.5.2",
     "next": "14.2.5",
     "react": "^18",
     "react-bootstrap": "^2.10.4",
