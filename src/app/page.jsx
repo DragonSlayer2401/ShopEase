@@ -1,6 +1,6 @@
 import CategoryContainer from '@/components/Categories/CategoryContainer';
 import ProductCarousel from '@/components/Carousel/ProductCarousel';
-import NavBar from '@/components/Navigation/NavBar';
+import NavBar from '@/components/Header/NavBar';
 import axios from 'axios';
 import { Container } from 'react-bootstrap';
 
