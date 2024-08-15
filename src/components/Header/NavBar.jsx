@@ -1,12 +1,12 @@
 'use client';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Spinner } from 'react-bootstrap';
 import { useUser } from '@auth0/nextjs-auth0/client';
 import './Header.css';
 
 const NavBar = () => {
-  const { user, error } = useUser();
+  const { user, error, isLoading } = useUser();
 
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -34,11 +34,15 @@ const NavBar = () => {
             <Nav.Link href="/cart">
               <FontAwesomeIcon icon={faShoppingCart} />
             </Nav.Link>
-            {user ? (
+            {isLoading ? (
+              <Spinner animation="border" />
+            ) : user ? (
               <NavDropdown title="Account">
                 <NavDropdown.Item href="">Profile</NavDropdown.Item>
                 <NavDropdown.Item href="">Orders</NavDropdown.Item>
-                <NavDropdown.Item href="/api/auth/logout">Logout</NavDropdown.Item>
+                <NavDropdown.Item href="/api/auth/logout">
+                  Logout
+                </NavDropdown.Item>
               </NavDropdown>
             ) : (
               <>
