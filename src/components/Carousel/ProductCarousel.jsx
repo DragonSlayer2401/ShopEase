@@ -1,5 +1,5 @@
 import { Carousel, CarouselCaption, CarouselItem } from 'react-bootstrap';
-import './Carousel.css';
+import './carousel.css';
 
 const ProductCarousel = ({ products }) => {
   return (
