@@ -1,6 +1,6 @@
 import { Col, Row } from 'react-bootstrap';
 import CategoryCard from './CategoryCard';
-import './Category.css';
+import './category.css';
 
 const CategoryContainer = ({ categories }) => {
   return (

@@ -3,7 +3,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Nav, Navbar, NavDropdown, Spinner } from 'react-bootstrap';
 import { useUser } from '@auth0/nextjs-auth0/client';
-import './Header.css';
+import './header.css';
 
 const NavBar = () => {
   const { user, error, isLoading } = useUser();

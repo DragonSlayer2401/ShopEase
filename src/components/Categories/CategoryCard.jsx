@@ -1,5 +1,5 @@
 import { Card, CardBody, CardImg, CardTitle } from 'react-bootstrap';
-import './Category.css';
+import './category.css';
 
 const CategoryCard = ({ category }) => {
   return (
