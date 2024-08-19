@@ -47,7 +47,9 @@ const ContactForm = () => {
             className="rounded-lg"
           />
         </Form.Group>
-        <Button type="submit" className="block mx-auto w-full h-12 rounded-lg">Submit</Button>
+        <Button type="submit" className="block mx-auto w-full h-12 rounded-lg">
+          Submit
+        </Button>
       </Form>
     </>
   );
