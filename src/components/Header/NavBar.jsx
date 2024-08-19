@@ -22,6 +22,7 @@ const NavBar = () => {
         <Navbar.Brand
           style={{ color: '#0d6efd' }}
           className="font-bold text-2xl"
+          href="/"
         >
           ShopEase
         </Navbar.Brand>
