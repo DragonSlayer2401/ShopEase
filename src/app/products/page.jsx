@@ -1,7 +1,5 @@
-'use client';
 import { Container } from 'react-bootstrap';
 import axios from 'axios';
-import { useSearchParams } from 'next/navigation';
 import NavBar from '../components/Header/NavBar';
 import ProductContainer from '../components/Products/ProductContainer';
 
@@ -30,9 +28,8 @@ const getProducts = async (category) => {
   }
 };
 
-export default async function Products() {
-  const searchParams = useSearchParams();
-  const category = searchParams.get('category');
+export default async function Products({ searchParams }) {
+  const category = searchParams.category;
   const products = await getProducts(category);
   return (
     <>
