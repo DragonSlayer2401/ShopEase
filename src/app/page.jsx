@@ -1,8 +1,8 @@
-import CategoryContainer from '@/components/Categories/CategoryContainer';
-import ProductCarousel from '@/components/Carousel/ProductCarousel';
-import NavBar from '@/components/Header/NavBar';
 import axios from 'axios';
 import { Container } from 'react-bootstrap';
+import ProductCarousel from './components/Carousel/ProductCarousel';
+import CategoryContainer from './components/Categories/CategoryContainer';
+import NavBar from './components/Header/NavBar';
 
 const getCategories = async () => {
   try {
@@ -66,7 +66,7 @@ export default async function Home() {
     <>
       <NavBar />
       <Container className="mx-auto py-8 px-6">
-        <ProductCarousel className="mx-auto" products={products}  />
+        <ProductCarousel className="mx-auto" products={products} />
         <CategoryContainer categories={categories} />
       </Container>
     </>
