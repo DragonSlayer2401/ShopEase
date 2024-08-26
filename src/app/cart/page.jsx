@@ -1,4 +1,5 @@
-import NavBar from '@/components/Header/NavBar';
+import NavBar from "../components/Header/NavBar";
+
 
 export default async function Cart() {
   return (
