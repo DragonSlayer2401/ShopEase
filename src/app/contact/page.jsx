@@ -1,6 +1,6 @@
-import ContactForm from "@/components/Forms/ContactForm";
-import NavBar from "@/components/Header/NavBar";
-import { Container } from "react-bootstrap";
+import { Container } from 'react-bootstrap';
+import NavBar from '../components/Header/NavBar';
+import ContactForm from '../components/Forms/ContactForm';
 
 export default async function Contact() {
   return (

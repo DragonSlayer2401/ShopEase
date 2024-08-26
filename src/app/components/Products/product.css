@@ -1,3 +1,9 @@
+.title {
+  font-family: Roboto, sans-serif;
+  color: #343a40;
+  letter-spacing: 0.5px;
+}
+
 .card {
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
